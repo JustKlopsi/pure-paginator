@@ -1,3 +1,5 @@
+import './pagination.css';
+
 export class Pagination {
     constructor(tableWrapper, paginationWrapper, firstSite = 1, rowsPerPage = 10) {
         this.table = tableWrapper;
