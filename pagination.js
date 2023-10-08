@@ -1,5 +1,11 @@
 import './pagination.css';
 
+/**
+ * @param {HTMLElement} tableWrapper - the wrapper in which the content should be listed
+ * @param {HTMLElement} paginationWrapper - the wrapper where the page numbering is inserted
+ * @param {Number} firstSite - which page should be displayed first, default "1"
+ * @param {Number} rowsPerPage - how many rows to display per page, default "10"
+ */
 export class Pagination {
     constructor(tableWrapper, paginationWrapper, firstSite = 1, rowsPerPage = 10) {
         this.table = tableWrapper;
@@ -260,6 +266,10 @@ export class Pagination {
         }
     }
 
+    /**
+     * @description reindex the pagiantion
+     * @param {String} containsClass - optional class for aditional filter
+     */
     reindexPagination(containsClass = null) {
         this.pageArray = this.getPageArray(containsClass);
 
