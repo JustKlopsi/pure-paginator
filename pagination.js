@@ -1,4 +1,4 @@
-import './pagination.css';
+import './pure-paginator/pagination.css';
 
 /**
  * @param {HTMLElement} tableWrapper - the wrapper in which the content should be listed
