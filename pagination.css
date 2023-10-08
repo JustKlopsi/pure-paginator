@@ -16,6 +16,7 @@
 
 .pagination-placeholder {
   display: none;
+  justify-content: center;
 }
 
 .pagination-placeholder.active{
