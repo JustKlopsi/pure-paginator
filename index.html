@@ -47,7 +47,11 @@
       border-radius: 4px;
     }
 
-    .div-pagination-wrapper, .pagination-site-number-wrapper{
+    .div-pagination-wrapper {
+      gap: 0 5px;
+    }
+
+    .div-pagination-wrapper .pagination-site-number-wrapper {
       gap: 0 5px;
     }
 
@@ -102,9 +106,8 @@
   </div>
 </body>
 
-<script type="module" src="/pagination.js"></script>
 <script type="module">
-  import { Pagination } from "/pagination.js";
+  import { Pagination } from "./pagination.js";
 
   function buildTableData(int) {
     const iInt = Number(document.querySelector(".table-body").getAttribute('data-table-index'));
