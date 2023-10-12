@@ -246,7 +246,6 @@ export class Pagination {
 
     setPlaceholder() {
         if (this.pageArray.length >= 6 && this.currentSiteNumberIndex >= 3 && this.paginationWrapper.querySelector('.first-pagination-placeholder')) {
-            console.log(this.pageArray.length)
             this.paginationWrapper.querySelector('.first-pagination-placeholder').classList.add('active');
         } else if (this.paginationWrapper.querySelector('.first-pagination-placeholder')) {
             this.paginationWrapper.querySelector('.first-pagination-placeholder').classList.remove('active');
