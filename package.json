@@ -1,6 +1,6 @@
 {
   "name": "pure-paginator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pure javascript list paginator",
   "main": "pagination.js",
   "type": "module",
