@@ -10,6 +10,11 @@
   display: flex;
 }
 
+.pagination-site-number-wrapper button.active {
+  background-color: #000000;
+  color: #ffffff;
+}
+
 .pagination-button-not-displayed {
   display: none;
 }
