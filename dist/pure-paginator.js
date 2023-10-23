@@ -1,5 +1,11 @@
 (function(){"use strict";try{if(typeof document<"u"){var e=document.createElement("style");e.appendChild(document.createTextNode(".pagination-inactive{display:none}.pagination-number-wrapper,.pagination-site-number-wrapper{display:flex}.pagination-site-number-wrapper button.active{background-color:#000;color:#fff}.pagination-button-not-displayed{display:none}.pagination-placeholder{display:none;justify-content:center}.pagination-placeholder.active{display:flex}")),document.head.appendChild(e)}}catch(n){console.error("vite-plugin-css-injected-by-js",n)}})();
 class h {
+  /**
+   * @param {HTMLElement} tableWrapper - the wrapper in which the content should be listed
+   * @param {HTMLElement} paginationWrapper - the wrapper where the page numbering is inserted
+   * @param {Number} firstSite - which page should be displayed first, default "1"
+   * @param {Number} rowsPerPage - how many rows to display per page, default "10"
+   */
   constructor(t, e, i = 1, n = 10) {
     this.table = t, this.paginationWrapper = e, this.firstSiteIndex = Number(i) - 1, this.rowsPerPage = n, this.pageArray = [], this.currentSiteNumberIndex, this.startPagination();
   }

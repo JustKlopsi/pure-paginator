@@ -1,12 +1,12 @@
 import '/pure-paginator.css';
 
-/**
- * @param {HTMLElement} tableWrapper - the wrapper in which the content should be listed
- * @param {HTMLElement} paginationWrapper - the wrapper where the page numbering is inserted
- * @param {Number} firstSite - which page should be displayed first, default "1"
- * @param {Number} rowsPerPage - how many rows to display per page, default "10"
- */
 export class Pagination {
+    /**
+     * @param {HTMLElement} tableWrapper - the wrapper in which the content should be listed
+     * @param {HTMLElement} paginationWrapper - the wrapper where the page numbering is inserted
+     * @param {Number} firstSite - which page should be displayed first, default "1"
+     * @param {Number} rowsPerPage - how many rows to display per page, default "10"
+     */
     constructor(tableWrapper, paginationWrapper, firstSite = 1, rowsPerPage = 10) {
         this.table = tableWrapper;
         this.paginationWrapper = paginationWrapper;
