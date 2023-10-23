@@ -1,8 +1,10 @@
 {
   "name": "pure-paginator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Pure javascript list paginator",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "type": "module",
   "module": "./dist/pure-paginator.js",
   "main": "./dist/pure-paginator.umd.cjs",
