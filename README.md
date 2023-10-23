@@ -59,4 +59,4 @@ pagination.reindexPagination(containsClass);
 
 ## Customization
 
-For customizations simply adapt [these](pagination.css) styles
+For customizations simply adapt [these](pure-paginator.css) styles
