@@ -9,7 +9,7 @@ Pure Paginator is a simple and lightweight pagination library for your web proje
 
 - Easy to integrate into your web projects.
 - Customizable design and styling.
-- Minimal dependencies, built with pure JavaScript and CSS.
+- No dependencies, built with pure JavaScript and CSS.
 
 ## Install
 
@@ -17,7 +17,20 @@ Pure Paginator is a simple and lightweight pagination library for your web proje
 
 Add to your project:
 
-`import { Pagination } from 'pure-paginator';`
+```
+import { Pagination } from 'pure-paginator';
+```
+or 
+
+```
+const { Pagination } = require('pure-paginator');
+```
+
+or for Script Tag: Copy pure-paginator.js from node_modules and include it anywhere in your HTML.
+
+```
+<script src="node_modules/pure-paginator/dist/pure-paginator.js"></script>
+```
 
 
 ## Usage
