@@ -8,8 +8,8 @@
   "main": "./dist/pure-paginator.umd.cjs",
   "exports": {
     ".": {
-      "import": "./dist/my-lib.js",
-      "require": "./dist/my-lib.umd.cjs"
+      "import": "./dist/pure-paginator.js",
+      "require": "./dist/pure-paginator.umd.cjs"
     }
   },
   "scripts": {
