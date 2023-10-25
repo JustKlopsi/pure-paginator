@@ -31,9 +31,7 @@
   },
   "homepage": "https://github.com/JustKlopsi/pure-paginator#readme",
   "devDependencies": {
-    "vite": "^4.4.5"
-  },
-  "dependencies": {
+    "vite": "^4.4.5",
     "vite-plugin-css-injected-by-js": "^3.3.0"
   }
 }
