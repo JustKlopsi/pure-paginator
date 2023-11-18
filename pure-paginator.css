@@ -10,11 +10,6 @@
   display: flex;
 }
 
-.pagination-site-number-wrapper button.active {
-  background-color: #000000;
-  color: #ffffff;
-}
-
 .pagination-button-not-displayed {
   display: none;
 }
@@ -24,6 +19,14 @@
   justify-content: center;
 }
 
-.pagination-placeholder.active{
+.pagination-placeholder.active {
   display: flex;
+}
+
+.pagination-placeholder {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

@@ -11,15 +11,20 @@
 
     body {
       padding: 0 20%;
+      background-color: #161616;
+      color: #ffffff;
     }
 
-    h1, h2 {
+    h1,
+    h2 {
       width: 100%;
       text-align: center;
     }
 
     h3 {
       margin: 0;
+      align-self: flex-start;
+      margin-bottom: 10px;
     }
 
     .example-wrapper {
@@ -34,32 +39,68 @@
       display: flex;
       flex-direction: column;
       gap: 10px 0;
-    }
-
-    .table-pagination-wrapper .pagination-placeholder {
+      width: 320px;
+      background-color: #ffffff;
       color: #000000;
+      padding: 10px;
+      border-radius: 12px;
+      align-items: center;
     }
 
-    .div-row {
-      display: flex;
-      gap: 0 30px;
+    .div-pagination-wrapper button.active,
+    button:hover {
+      cursor: pointer;
     }
 
-    .div-pagination-wrapper {
-      background-color: #161616;
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+      width: 80%;
+    }
+
+    table thead {
+      color: #ffffff;
+      text-align: left;
+    }
+
+    table thead tr th {
+      background-color: #3944bc;
+    }
+
+    table thead th,
+    td {
+      padding: 5px 8px;
+    }
+
+    table thead th:first-child {
+      border-top-left-radius: 6px;
+    }
+
+    table thead th:last-child {
+      border-top-right-radius: 6px;
+    }
+
+    table tbody tr:nth-of-type(even) td {
+      background-color: #cccccc;
+    }
+
+    .table-pagination-wrapper {
+      background-color: #000000;
       padding: 4px;
       border-radius: 4px;
     }
 
-    .div-pagination-wrapper {
+    .table-pagination-wrapper {
       gap: 0 5px;
     }
 
-    .div-pagination-wrapper .pagination-site-number-wrapper {
+    .table-pagination-wrapper .pagination-site-number-wrapper {
       gap: 0 5px;
     }
 
-    .div-pagination-wrapper button, .pagination-placeholder {
+    .table-pagination-wrapper button,
+    .pagination-placeholder {
       width: 24px;
       height: 24px;
       background-color: unset;
@@ -68,14 +109,44 @@
       border-radius: 4px;
     }
 
-    .div-pagination-wrapper button.active, button:hover {
-      background-color: #ffffff;
-      color: #161616;
-      cursor: pointer;
+    .table-content-wrapper .table-pagination-wrapper button.active,
+    .table-content-wrapper .table-pagination-wrapper button:hover {
+      background-color: #2e3033;
+    }
+
+    .table-pagination-wrapper button.active {
+      cursor: unset;
+      background-color: #161616;
+    }
+
+    .div-body {
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    }
+
+    .div-row {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      padding: 5px 8px;
+      gap: 0 30px;
+    }
+
+    .div-row div {
+      flex: 1;
+      white-space: nowrap;
+    }
+
+    .div-row:nth-of-type(odd) {
+      background-color: #cccccc;
+    }
+
+    .div-pagination-wrapper .pagination-placeholder {
+      color: #000000;
     }
 
     .div-pagination-wrapper button.active {
-      cursor: unset;
+      background-color: #000000;
+      color: #ffffff;
     }
   </style>
 </head>
@@ -84,7 +155,7 @@
   <h1>pure-paginator demo</h1>
   <h2>Pure javascript list paginator</h2>
   <div class="example-wrapper">
-    <div class="content-wrapper">
+    <div class="content-wrapper table-content-wrapper">
       <h3>Table example:</h3>
       <table>
         <thead>
